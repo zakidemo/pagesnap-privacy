@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Snap Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --text: #1c1917;
+      --muted: #57534e;
+      --border: #e7e5e4;
+      --accent: #4f46e5;
+      --mark: #fef08a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1917;
+        --text: #fafaf9;
+        --muted: #a8a29e;
+        --border: #44403c;
+        --accent: #a5b4fc;
+        --mark: #854d0e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px 16px 80px;
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+    h2 { font-size: 20px; margin: 36px 0 8px; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 22px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+    a { color: var(--accent); }
+    mark { background: var(--mark); color: inherit; padding: 0 3px; border-radius: 3px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--border); }
+    th { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .callout { border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 6px; padding: 4px 16px; margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page Snap Privacy Policy</h1>
+    <div class="meta">Last updated: October 30, 2026 &middot; Applies to Page Snap version 1.6 and later</div>
+
+    <div class="callout">
+      <p><strong>In short:</strong> Page Snap keeps your screenshots, history and settings on your own computer.
+      The developer does not receive any of it. The only time anything is sent anywhere is when you press the optional
+      &ldquo;AI title&rdquo; button, and then only to Anthropic, using your own API key.</p>
+    </div>
+
+    <h2>Who is responsible</h2>
+    <p>Page Snap is published by Zakaria NEILI. Questions about this policy:
+    <a href="mailto:zaki.neli@yahoo.fr">zaki.neli@yahoo.fr</a>.</p>
+
+    <h2>What Page Snap does</h2>
+    <p>Page Snap is a Chrome extension that captures screenshots of the web pages you are viewing, lets you
+    annotate and save them, and keeps a history of what you saved. It works only when you ask it to: by pressing its keyboard shortcut or clicking its toolbar button, or, if you
+    turn on the optional mouse gesture in the settings, by pressing the left and right mouse buttons together.</p>
+
+    <h2>Information Page Snap handles</h2>
+    <table>
+      <thead>
+        <tr><th>Information</th><th>What happens to it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Screenshots of pages you capture</td>
+          <td>Shown in the editing window, then saved as a file in your Downloads folder when you press Save. If you keep the history turned on, a copy is stored in the extension's local database on your computer.</td>
+        </tr>
+        <tr>
+          <td>Titles, page addresses, notes and tags</td>
+          <td>Stored with each saved capture in the local history, so you can search it. They stay on your computer.</td>
+        </tr>
+        <tr>
+          <td>Settings (folder name, file name pattern, image format, tool and color choices)</td>
+          <td>Stored in the browser's extension storage on your computer.</td>
+        </tr>
+        <tr>
+          <td>Your Anthropic API key (optional)</td>
+          <td>Stored in the browser's extension storage on your computer. It is used only as the credential in the request described below.</td>
+        </tr>
+        <tr>
+          <td>Mouse button presses on pages</td>
+          <td>Only if you turn on the optional mouse gesture in the settings. Page Snap then asks your browser for access to all sites and watches mouse presses in pages only to detect the left-plus-right click. They are not recorded or stored. Turning the gesture off gives that access back.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>A screenshot shows whatever is on your screen at that moment, which can include personal or sensitive
+    information. Page Snap does not look for it or read it; you decide which pages to capture. The editor has Blur and
+    Cover tools to hide details before you save, and a file you save to Downloads is an ordinary file that you control.</p>
+
+    <h2>The one case where data leaves your computer: AI title</h2>
+    <p>If you add your own Anthropic API key and press <strong>AI title</strong>, Page Snap sends the following to
+    Anthropic&rsquo;s API (api.anthropic.com) so that Claude can write a short title for the capture:</p>
+    <ul>
+      <li>the page&rsquo;s title, description and main heading, and the first 1,500 characters of its text;</li>
+      <li>your API key, as the credential for the request.</li>
+    </ul>
+    <p>Screenshots are never sent. Nothing is sent unless you press the button, and the first time you do, Page Snap
+    asks for your confirmation. The developer of Page Snap does not receive this data. Anthropic handles it under
+    its own terms and privacy policy, which you can read on anthropic.com. If you never add an API key, this feature
+    never runs.</p>
+
+    <h2>What Page Snap does not do</h2>
+    <ul>
+      <li>It does not sell your data, show ads, or use analytics or tracking of any kind.</li>
+      <li>It does not require an account.</li>
+      <li>It does not send data to the developer or to any server other than the Anthropic request above.</li>
+      <li>It does not download or run code from the internet; everything it runs is included in the extension.</li>
+    </ul>
+
+    <h2>Your choices and control</h2>
+    <ul>
+      <li>Delete any capture from the history, or delete the whole history, on the history page or in the settings.</li>
+      <li>Turn off the history in the settings so that captures are not kept after saving.</li>
+      <li>Remove your API key in the settings at any time.</li>
+      <li>Uninstalling Page Snap removes its stored data from the browser. Files you saved to Downloads stay where they are until you delete them.</li>
+    </ul>
+    <p>Because the developer never receives your data, there is nothing on the developer&rsquo;s side to access, correct or erase.</p>
+
+    <h2>Security</h2>
+    <p>Data is kept in your browser profile. Your API key is stored in the browser&rsquo;s extension storage, so
+    anyone who can use your computer account and browser profile could read it. Use a key with a spending limit, and
+    remove it from the settings if you share the computer.</p>
+
+    <h2>Chrome Web Store User Data Policy</h2>
+    <p>Page Snap&rsquo;s use of information it handles follows the Chrome Web Store User Data Policy (explained in
+    Google&rsquo;s <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">User Data FAQ</a>),
+    including the Limited Use requirements. Page Snap uses the information only to provide its single purpose: capturing,
+    annotating, saving and looking back at screenshots. It does not transfer it to others except as described above,
+    and does not use it for advertising, creditworthiness or lending.</p>
+
+    <h2>Children</h2>
+    <p>Page Snap is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If Page Snap&rsquo;s handling of data changes (for example, a new feature that contacts a server), this page
+    will be updated before the change ships, and the date at the top will change.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:zaki.neli@yahoo.fr">zaki.neli@yahoo.fr</a></p>
+  </main>
+</body>
+</html>
